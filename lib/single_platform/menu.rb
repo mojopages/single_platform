@@ -13,51 +13,51 @@ class SinglePlatform::Menu
     build_menu
   end
   
-  def entries
+  def self.entries
     @entries
   end
   
-  def name
+  def self.name
     @name
   end
   
-  def state
+  def self.state
     @state
   end
   
-  def title
+  def self.title
     @title
   end
   
-  def secure_attribution_image
+  def self.secure_attribution_image
     @secure_attribution_image
   end
   
-  def attribution_image
+  def self.attribution_image
     @attribution_image
   end
   
-  def attribution_image_link
+  def self.attribution_image_link
     @attribution_image_link
   end
   
-  def desc
+  def self.desc
     @desc
   end
   
-  def disclaimer
+  def self.disclaimer
     @disclaimer
   end
   
-  def id
+  def self.id
     @id
   end
   
-  def footnote
+  def self.footnote
     @footnote
   end
   
-  def menu_sections
+  def self.menu_sections
     @menu_sections
   end
   
