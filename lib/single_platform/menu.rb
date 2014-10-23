@@ -12,7 +12,55 @@ class SinglePlatform::Menu
     end
     build_menu
   end
-
+  
+  def entries
+    @entries
+  end
+  
+  def name
+    @name
+  end
+  
+  def state
+    @state
+  end
+  
+  def title
+    @title
+  end
+  
+  def secure_attribution_image
+    @secure_attribution_image
+  end
+  
+  def attribution_image
+    @attribution_image
+  end
+  
+  def attribution_image_link
+    @attribution_image_link
+  end
+  
+  def desc
+    @desc
+  end
+  
+  def disclaimer
+    @disclaimer
+  end
+  
+  def id
+    @id
+  end
+  
+  def footnote
+    @footnote
+  end
+  
+  def menu_sections
+    @menu_sections
+  end
+  
   def self.menus_for_location(location)
     data = SinglePlatform::Request.get("/locations/#{location.id}/menu").body["menus"]
     data.collect { |menu_data| new(location, menu_data) }
